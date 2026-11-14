@@ -3,7 +3,7 @@
 
 M.Tech, IIT (ISM) Dhanbad | 8+ Years of Experience
 
-I build AI-powered applications that go beyond experimentation — combining Generative AI, Agentic workflows, Retrieval-Augmented Generation (RAG), and Machine Learning with scalable backend architectures.
+I build AI-powered applications that go beyond experimentation - combining Generative AI, Agentic workflows, Retrieval-Augmented Generation (RAG), and Machine Learning with scalable backend architectures.
 
 My focus is on engineering practical AI systems using Python, FastAPI, LangGraph, vector databases, cloud services, and containerized deployments. I am particularly interested in building reliable, maintainable AI applications that address real-world enterprise challenges.
 
