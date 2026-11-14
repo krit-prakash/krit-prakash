@@ -1,13 +1,16 @@
+
 # Krit Prakash
 ### Applied AI Engineer | AI Engineer | Generative AI | Agentic AI | RAG | MLOps
 
-M.Tech, IIT (ISM) Dhanbad | 8+ Years of Experience
+**M.Tech, IIT (ISM) Dhanbad | 8+ Years of Experience**
 
-I build AI-powered applications that go beyond experimentation - combining Generative AI, Agentic workflows, Retrieval-Augmented Generation (RAG), and Machine Learning with scalable backend architectures.
+I enjoy building things that bring Machine Learning and AI beyond experimentation and into practical applications.
 
-My focus is on engineering practical AI systems using Python, FastAPI, LangGraph, vector databases, cloud services, and containerized deployments. I am particularly interested in building reliable, maintainable AI applications that address real-world enterprise challenges.
+Over the years, I have worked with Python and Machine Learning, and my recent focus has been on Generative AI, Agentic workflows, and Retrieval-Augmented Generation (RAG). I am particularly interested in building AI applications that combine intelligent workflows with reliable backend systems, vector databases, and cloud deployment.
 
-**Current Focus:** Applied AI Engineering | Agentic AI | Enterprise RAG | Production-oriented AI Systems
+I believe good AI engineering is not just about choosing the right model. It is also about how the application retrieves information, handles failures, evaluates responses, and performs under real-world constraints.
+
+**Currently focused on:** Applied AI Engineering | Agentic AI | Enterprise RAG | Production-Oriented AI Systems
 
 ---
 
@@ -19,18 +22,21 @@ My focus is on engineering practical AI systems using Python, FastAPI, LangGraph
 
 [Live API & Swagger Documentation](https://compliance-policy-ai-agent.onrender.com/docs) | [GitHub Repository](https://github.com/krit-prakash/compliance-policy-ai-agent)
 
-**Technology Stack:** Python, FastAPI, LangGraph, Qdrant Cloud, Groq, Cohere, Docker, Render
+**Tech Stack:** Python, FastAPI, LangGraph, Qdrant Cloud, Groq, Cohere, Docker, Render
 
-Engineered and deployed an Agentic RAG application designed around tenant-scoped document retrieval, answer evaluation, and lightweight cloud deployment.
+This is one of my recent hands-on projects, where I explored some of the challenges involved in building AI applications for enterprise-oriented use cases.
 
-**Key Engineering Highlights:**
+The application combines document retrieval, tenant-level filtering, answer evaluation, and cloud deployment.
 
-- **Multi-Tenant Retrieval Isolation:** Implemented tenant-level document retrieval using `tenant_id` metadata filtering in Qdrant Cloud, ensuring retrieval is scoped to the respective tenant.
-- **Self-Reflective Evaluation:** Developed a LangGraph StateGraph evaluation workflow that cross-checks generated answers against retrieved document context and returns a safe fallback when the answer is unsupported.
-- **Cloud Resource Optimization:** Integrated Cohere's embedding API (`embed-english-light-v3.0`) instead of running a heavyweight local embedding model, reducing local runtime dependency requirements.
-- **Backend Architecture:** Built REST APIs using FastAPI and deployed the application with Docker on Render.
+**What I worked on:**
 
-**Engineering Focus:** Agentic RAG, tenant-level retrieval isolation, answer validation, API architecture, and cloud deployment.
+- **Tenant-Level Data Isolation:** Implemented `tenant_id` metadata filtering in Qdrant Cloud to scope document retrieval to the respective tenant.
+- **Answer Validation:** Built a self-reflective evaluation workflow using LangGraph StateGraph. An evaluation node checks generated answers against retrieved document context.
+- **Safe Failure Handling:** When an answer is not supported by the retrieved context, the workflow returns a safe fallback response.
+- **Cloud Optimization:** Integrated Cohere's embedding API (`embed-english-light-v3.0`) instead of running a heavyweight local embedding model.
+- **Backend & Deployment:** Developed REST APIs using FastAPI and deployed the containerized application on Render.
+
+**Key Learning:** Building a useful RAG application involves much more than connecting an LLM to a vector database. Retrieval boundaries, answer reliability, failure handling, and deployment decisions matter just as much.
 
 ---
 
@@ -38,41 +44,47 @@ Engineered and deployed an Agentic RAG application designed around tenant-scoped
 
 **End-to-End Machine Learning & MLOps Pipeline**
 
-**Technology Stack:** Python, PySpark, XGBoost, FastAPI, Docker, Azure, GitHub Actions
+[GitHub Repository](https://github.com/krit-prakash/turbofan-predictive-maintenance-mlops)
 
-Developed an end-to-end predictive maintenance solution using turbofan engine degradation data.
+**Tech Stack:** Python, PySpark, XGBoost, FastAPI, Docker, Azure, GitHub Actions
 
-**Key Engineering Highlights:**
+A predictive maintenance project focused on analyzing turbofan engine degradation data and estimating remaining useful life.
 
-- Engineered a machine learning pipeline using PySpark for data processing and XGBoost for predictive modeling.
-- Developed a predictive maintenance model with the following evaluation results:
+**What I worked on:**
+
+- Used PySpark for data processing and feature preparation.
+- Developed an XGBoost-based predictive model.
+- Achieved the following evaluation results:
   - RMSE: 12.71
   - MAE: 8.56
   - R²: 0.906
-- Integrated model serving through FastAPI and containerized the application using Docker.
-- Incorporated Azure deployment and GitHub Actions into the MLOps workflow.
+- Integrated FastAPI for model serving.
+- Used Docker, Azure, and GitHub Actions as part of the deployment and MLOps workflow.
 
-**Engineering Focus:** Distributed data processing, predictive maintenance, model serving, containerization, and MLOps.
+**Key Learning:** Connecting data processing, model development, API serving, and deployment into an end-to-end ML workflow.
 
 ---
 
 ### 3. Multi-Agent Grant Proposal Generator
 
-**Local Multi-Agent AI Application**
+**LangGraph-Based Multi-Agent AI Application**
 
-**Technology Stack:** Python, LangGraph, Ollama, Mistral, FAISS, Streamlit, SQLite
+[GitHub Repository](https://github.com/krit-prakash/Multi-Agent-AI-Grant-Proposal-Generator-LangGraph)
 
-Designed and developed a multi-agent application to assist with grant proposal generation using locally hosted LLMs.
+**Tech Stack:** Python, LangGraph, Ollama, Mistral, FAISS, Streamlit, SQLite
 
-**Key Engineering Highlights:**
+Built a multi-agent application to assist with grant proposal generation using locally hosted language models.
 
-- Architected an agent-based workflow using LangGraph to organize proposal generation tasks.
+**What I worked on:**
+
+- Designed an agent-based workflow using LangGraph.
 - Integrated Ollama and Mistral for local LLM inference.
-- Implemented FAISS-based vector retrieval to support context-aware generation.
-- Used Streamlit for the application interface and SQLite for data persistence.
-- Evaluated generated outputs, achieving scores of 81 and 87 in project evaluations.
+- Used FAISS for vector-based retrieval and contextual information access.
+- Developed an interactive Streamlit interface.
+- Integrated SQLite for data persistence.
+- Evaluated generated outputs, achieving scores of 81 and 87.
 
-**Engineering Focus:** Multi-agent orchestration, local LLMs, vector search, and AI application development.
+**Key Learning:** Understanding how multiple AI agents can work together to organize tasks and generate context-aware outputs.
 
 ---
 
@@ -80,36 +92,40 @@ Designed and developed a multi-agent application to assist with grant proposal g
 
 **Financial Document Analysis & RAG Evaluation**
 
-**Technology Stack:** Python, LangGraph, ChromaDB, Ollama, RAGAS
+[GitHub Repository](https://github.com/krit-prakash/enterprise-llm-auditor)
 
-Developed a document-focused LLM application for financial information retrieval and answer evaluation.
+**Tech Stack:** Python, LangGraph, ChromaDB, Ollama, RAGAS
 
-**Key Engineering Highlights:**
+Developed a document-focused LLM application exploring how RAG can support financial information retrieval and answer evaluation.
+
+**What I worked on:**
 
 - Implemented a RAG pipeline using ChromaDB for document retrieval.
-- Integrated locally hosted LLMs through Ollama.
+- Integrated Ollama for local LLM inference.
 - Used LangGraph to organize retrieval and response-generation workflows.
-- Incorporated RAGAS for evaluating retrieval and generation quality.
+- Incorporated RAGAS to evaluate retrieval and generation quality.
 
-**Engineering Focus:** Financial document analysis, RAG architecture, LLM evaluation, and workflow orchestration.
+**Key Learning:** Building document-grounded AI applications requires attention to both retrieval quality and the reliability of generated answers.
 
 ---
 
 ### 5. NACA Airfoil Analysis
 
-**Engineering Machine Learning Application**
+**Machine Learning for Engineering Applications**
 
-**Technology Stack:** Python, Scikit-learn, FastAPI
+[GitHub Repository](https://github.com/krit-prakash/NACA-Airfoil-Comparison)
+
+**Tech Stack:** Python, Scikit-learn, FastAPI
 
 Applied machine learning techniques to an engineering problem involving NACA airfoil analysis.
 
-**Key Engineering Highlights:**
+**What I worked on:**
 
 - Applied Python-based data analysis and machine learning techniques to engineering data.
-- Used Scikit-learn for model development.
+- Used Scikit-learn for model development and evaluation.
 - Developed a FastAPI interface for model serving.
 
-**Engineering Focus:** Applied machine learning, engineering analytics, and API-based model deployment.
+**Key Learning:** Applying machine learning concepts to practical engineering problems and exposing model functionality through APIs.
 
 ---
 
@@ -121,7 +137,6 @@ Applied machine learning techniques to an engineering problem involving NACA air
 - FastAPI
 - REST API Development
 - Object-Oriented Programming
-- Data Structures and Algorithms
 
 ### Generative AI & Agentic AI
 - Large Language Models (LLMs)
@@ -166,15 +181,15 @@ Applied machine learning techniques to an engineering problem involving NACA air
 
 ---
 
-## Engineering Interests
+## What I Enjoy Working On
 
-- Designing reliable Agentic AI systems.
-- Building enterprise-oriented RAG applications.
-- Improving retrieval quality and LLM evaluation.
-- Developing scalable Python backends for AI applications.
-- Integrating vector databases and LLM services.
-- Deploying containerized AI applications to cloud environments.
-- Applying MLOps practices to machine learning systems.
+- Building practical Agentic AI applications.
+- Designing RAG pipelines for enterprise document workflows.
+- Improving retrieval quality and LLM response evaluation.
+- Developing Python backends for AI-powered applications.
+- Working with vector databases and LLM integrations.
+- Deploying containerized applications to cloud environments.
+- Connecting Machine Learning models with real-world applications.
 
 ---
 
@@ -185,26 +200,21 @@ Indian Institute of Technology (ISM), Dhanbad
 
 ---
 
-## Current Professional Focus
+## Professional Interests
 
-I am actively exploring opportunities in:
+I am interested in opportunities where I can contribute to building and deploying practical AI systems.
 
-- Applied AI Engineering
-- AI Engineering
-- Generative AI Engineering
-- Agentic AI Development
-- RAG & LLM Application Engineering
+**Roles:** Applied AI Engineer | AI Engineer | Generative AI Engineer | Agentic AI Engineer
 
 **Preferred Locations:** Hyderabad | Bengaluru | Remote (India)
 
 ---
 
-## Connect
+## Let's Connect
 
-[![GitHub](https://img.shields.io/badge/GitHub-Krit%20Prakash-181717?style=for-the-badge&logo=github)](https://github.com/krit-prakash)
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/)
+- **GitHub:** [github.com/krit-prakash](https://github.com/krit-prakash)
+- **LinkedIn:** [Krit Prakash](https://www.linkedin.com/in/krit-prakash-9a32a1246)
 
 ---
 
-*Building practical AI systems at the intersection of Machine Learning, Generative AI, and Software Engineering.*
+*Learning continuously, building thoughtfully, and turning AI ideas into practical engineering solutions.*
