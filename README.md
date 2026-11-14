@@ -1,95 +1,210 @@
 # Krit Prakash
+### Applied AI Engineer | AI Engineer | Generative AI | Agentic AI | RAG | MLOps
 
-### Applied AI/ML Engineer | Machine Learning | Generative AI | RAG | MLOps
+M.Tech, IIT (ISM) Dhanbad | 8+ Years of Experience
 
-M.Tech from IIT (ISM) Dhanbad with experience in Python, machine learning and applied AI.
+I build AI-powered applications that go beyond experimentation — combining Generative AI, Agentic workflows, Retrieval-Augmented Generation (RAG), and Machine Learning with scalable backend architectures.
 
-I build end-to-end AI/ML projects with a focus on model development, RAG and agentic workflows, APIs, containerization and deployment. My current work includes predictive maintenance, multi-agent systems and document intelligence applications.
+My focus is on engineering practical AI systems using Python, FastAPI, LangGraph, vector databases, cloud services, and containerized deployments. I am particularly interested in building reliable, maintainable AI applications that address real-world enterprise challenges.
+
+**Current Focus:** Applied AI Engineering | Agentic AI | Enterprise RAG | Production-oriented AI Systems
+
+---
 
 ## Featured Projects
 
-### NASA Turbofan Predictive Maintenance
+### 1. Enterprise Multi-Tenant Compliance AI Agent
 
-End-to-end Remaining Useful Life (RUL) prediction pipeline using NASA C-MAPSS turbofan engine data.
+**Cloud-Deployed Agentic RAG Application**
 
-**Stack:** Python, PySpark, XGBoost, MLflow, FastAPI, Docker, GitHub Actions, Microsoft Azure
+[Live API & Swagger Documentation](https://compliance-policy-ai-agent.onrender.com/docs) | [GitHub Repository](https://github.com/krit-prakash/compliance-policy-ai-agent)
 
-- Built a PySpark preprocessing and feature engineering pipeline for sensor data
-- Trained an XGBoost regression model for RUL prediction
-- Exposed model inference through FastAPI
-- Containerized the application with Docker
-- Set up CI/CD using GitHub Actions and deployed the API on Microsoft Azure
+**Technology Stack:** Python, FastAPI, LangGraph, Qdrant Cloud, Groq, Cohere, Docker, Render
 
-[View repository](https://github.com/krit-prakash/turbofan-predictive-maintenance-mlops)
+Engineered and deployed an Agentic RAG application designed around tenant-scoped document retrieval, answer evaluation, and lightweight cloud deployment.
 
----
+**Key Engineering Highlights:**
 
-### Multi-Agent Research Grant Proposal Generator
+- **Multi-Tenant Retrieval Isolation:** Implemented tenant-level document retrieval using `tenant_id` metadata filtering in Qdrant Cloud, ensuring retrieval is scoped to the respective tenant.
+- **Self-Reflective Evaluation:** Developed a LangGraph StateGraph evaluation workflow that cross-checks generated answers against retrieved document context and returns a safe fallback when the answer is unsupported.
+- **Cloud Resource Optimization:** Integrated Cohere's embedding API (`embed-english-light-v3.0`) instead of running a heavyweight local embedding model, reducing local runtime dependency requirements.
+- **Backend Architecture:** Built REST APIs using FastAPI and deployed the application with Docker on Render.
 
-LangGraph-based multi-agent workflow for generating, evaluating and refining research grant proposals.
-
-**Stack:** LangGraph, LangChain, FAISS, Ollama, Mistral, Streamlit, SQLite
-
-- Built specialized components for guideline ingestion, proposal generation, budgeting, evaluation and refinement
-- Used FAISS retrieval to provide funding-guideline context
-- Implemented conditional routing and iterative refinement with LangGraph
-- Added local LLM inference using Ollama
-- Built a Streamlit interface with DOCX export and SQLite persistence
-
-[View repository](https://github.com/krit-prakash/Multi-Agent-AI-Grant-Proposal-Generator-LangGraph)
+**Engineering Focus:** Agentic RAG, tenant-level retrieval isolation, answer validation, API architecture, and cloud deployment.
 
 ---
 
-### Enterprise Financial LLM Auditor
+### 2. NASA Turbofan Predictive Maintenance
 
-Local RAG application for querying and analyzing financial documents.
+**End-to-End Machine Learning & MLOps Pipeline**
 
-**Stack:** LangGraph, ChromaDB, Ollama, Ragas, Streamlit
+**Technology Stack:** Python, PySpark, XGBoost, FastAPI, Docker, Azure, GitHub Actions
 
-- Implemented document ingestion and vector-based retrieval using ChromaDB
-- Used LangGraph for query routing
-- Used locally hosted LLMs through Ollama
-- Added Ragas-based response evaluation
-- Built an interactive Streamlit interface
+Developed an end-to-end predictive maintenance solution using turbofan engine degradation data.
 
-[View repository](https://github.com/krit-prakash/enterprise-llm-auditor)
+**Key Engineering Highlights:**
+
+- Engineered a machine learning pipeline using PySpark for data processing and XGBoost for predictive modeling.
+- Developed a predictive maintenance model with the following evaluation results:
+  - RMSE: 12.71
+  - MAE: 8.56
+  - R²: 0.906
+- Integrated model serving through FastAPI and containerized the application using Docker.
+- Incorporated Azure deployment and GitHub Actions into the MLOps workflow.
+
+**Engineering Focus:** Distributed data processing, predictive maintenance, model serving, containerization, and MLOps.
 
 ---
 
-### NACA Airfoil Analysis
+### 3. Multi-Agent Grant Proposal Generator
 
-Computational engineering project exploring aerodynamic analysis and data-driven modeling for NACA airfoils.
+**Local Multi-Agent AI Application**
 
-**Stack:** Python, Pandas, NumPy, Scikit-learn, FastAPI
+**Technology Stack:** Python, LangGraph, Ollama, Mistral, FAISS, Streamlit, SQLite
 
-- Analyzed aerodynamic characteristics of NACA airfoils
-- Compared analytical and data-driven approaches
-- Built reusable Python components for analysis
-- Exposed selected functionality through FastAPI
+Designed and developed a multi-agent application to assist with grant proposal generation using locally hosted LLMs.
 
-[View repository](https://github.com/krit-prakash/NACA-Airfoil-Comparison)
+**Key Engineering Highlights:**
+
+- Architected an agent-based workflow using LangGraph to organize proposal generation tasks.
+- Integrated Ollama and Mistral for local LLM inference.
+- Implemented FAISS-based vector retrieval to support context-aware generation.
+- Used Streamlit for the application interface and SQLite for data persistence.
+- Evaluated generated outputs, achieving scores of 81 and 87 in project evaluations.
+
+**Engineering Focus:** Multi-agent orchestration, local LLMs, vector search, and AI application development.
+
+---
+
+### 4. Enterprise Financial LLM Auditor
+
+**Financial Document Analysis & RAG Evaluation**
+
+**Technology Stack:** Python, LangGraph, ChromaDB, Ollama, RAGAS
+
+Developed a document-focused LLM application for financial information retrieval and answer evaluation.
+
+**Key Engineering Highlights:**
+
+- Implemented a RAG pipeline using ChromaDB for document retrieval.
+- Integrated locally hosted LLMs through Ollama.
+- Used LangGraph to organize retrieval and response-generation workflows.
+- Incorporated RAGAS for evaluating retrieval and generation quality.
+
+**Engineering Focus:** Financial document analysis, RAG architecture, LLM evaluation, and workflow orchestration.
+
+---
+
+### 5. NACA Airfoil Analysis
+
+**Engineering Machine Learning Application**
+
+**Technology Stack:** Python, Scikit-learn, FastAPI
+
+Applied machine learning techniques to an engineering problem involving NACA airfoil analysis.
+
+**Key Engineering Highlights:**
+
+- Applied Python-based data analysis and machine learning techniques to engineering data.
+- Used Scikit-learn for model development.
+- Developed a FastAPI interface for model serving.
+
+**Engineering Focus:** Applied machine learning, engineering analytics, and API-based model deployment.
+
+---
 
 ## Technical Skills
 
-**Programming:** Python, SQL
+### Programming & Backend Engineering
+- Python
+- SQL
+- FastAPI
+- REST API Development
+- Object-Oriented Programming
+- Data Structures and Algorithms
 
-**Machine Learning:** Scikit-learn, XGBoost, Feature Engineering, Model Evaluation
+### Generative AI & Agentic AI
+- Large Language Models (LLMs)
+- Retrieval-Augmented Generation (RAG)
+- Agentic AI Workflows
+- LangGraph
+- LangChain
+- Multi-Agent Systems
+- Prompt Engineering
+- LLM Evaluation
+- RAGAS
+- Ollama
 
-**Generative AI:** LangGraph, LangChain, RAG, FAISS, ChromaDB, Ollama, Ragas
+### Vector Databases & AI Infrastructure
+- Qdrant Cloud
+- FAISS
+- ChromaDB
+- Cohere Embeddings
+- Groq API
+- Semantic Search
+- Metadata Filtering
 
-**Data:** PySpark, Pandas, NumPy
+### Data Science & Machine Learning
+- Machine Learning
+- Scikit-learn
+- XGBoost
+- PySpark
+- Pandas
+- NumPy
+- Exploratory Data Analysis
+- Feature Engineering
+- Model Evaluation
 
-**Backend and MLOps:** FastAPI, REST APIs, MLflow, Docker, GitHub Actions, Microsoft Azure
+### MLOps, Cloud & Deployment
+- Docker
+- Microsoft Azure
+- Render
+- GitHub Actions
+- Model Serving
+- CI/CD Fundamentals
+- Cloud Deployment
 
-## Education and Certifications
+---
 
-- M.Tech, IIT (ISM) Dhanbad
-- Microsoft Certified: Azure AI Fundamentals (AI-900)
-- Machine Learning Specialization, Stanford University (Coursera)
-- Advanced Certification in Data Science & AI, iHUB DivyaSampark, IIT Roorkee
-- NPTEL Domain Scholar, Data Science
-- NPTEL Discipline Star, Computer Science Engineering
+## Engineering Interests
 
-## Contact
+- Designing reliable Agentic AI systems.
+- Building enterprise-oriented RAG applications.
+- Improving retrieval quality and LLM evaluation.
+- Developing scalable Python backends for AI applications.
+- Integrating vector databases and LLM services.
+- Deploying containerized AI applications to cloud environments.
+- Applying MLOps practices to machine learning systems.
 
-LinkedIn: [linkedin.com/in/krit-prakash-9a32a1246](https://www.linkedin.com/in/krit-prakash-9a32a1246/)
+---
+
+## Education
+
+**Master of Technology (M.Tech)**  
+Indian Institute of Technology (ISM), Dhanbad
+
+---
+
+## Current Professional Focus
+
+I am actively exploring opportunities in:
+
+- Applied AI Engineering
+- AI Engineering
+- Generative AI Engineering
+- Agentic AI Development
+- RAG & LLM Application Engineering
+
+**Preferred Locations:** Hyderabad | Bengaluru | Remote (India)
+
+---
+
+## Connect
+
+[![GitHub](https://img.shields.io/badge/GitHub-Krit%20Prakash-181717?style=for-the-badge&logo=github)](https://github.com/krit-prakash)
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/)
+
+---
+
+*Building practical AI systems at the intersection of Machine Learning, Generative AI, and Software Engineering.*
