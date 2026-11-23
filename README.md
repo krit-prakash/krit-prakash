@@ -87,48 +87,6 @@ Built a multi-agent application to assist with grant proposal generation using l
 **Key Learning:** Understanding how multiple AI agents can work together to organize tasks and generate context-aware outputs.
 
 ---
-
-### 4. Enterprise Financial LLM Auditor
-
-**Financial Document Analysis & RAG Evaluation**
-
-[GitHub Repository](https://github.com/krit-prakash/enterprise-llm-auditor)
-
-**Tech Stack:** Python, LangGraph, ChromaDB, Ollama, RAGAS
-
-Developed a document-focused LLM application exploring how RAG can support financial information retrieval and answer evaluation.
-
-**What I worked on:**
-
-- Implemented a RAG pipeline using ChromaDB for document retrieval.
-- Integrated Ollama for local LLM inference.
-- Used LangGraph to organize retrieval and response-generation workflows.
-- Incorporated RAGAS to evaluate retrieval and generation quality.
-
-**Key Learning:** Building document-grounded AI applications requires attention to both retrieval quality and the reliability of generated answers.
-
----
-
-### 5. NACA Airfoil Analysis
-
-**Machine Learning for Engineering Applications**
-
-[GitHub Repository](https://github.com/krit-prakash/NACA-Airfoil-Comparison)
-
-**Tech Stack:** Python, Scikit-learn, FastAPI
-
-Applied machine learning techniques to an engineering problem involving NACA airfoil analysis.
-
-**What I worked on:**
-
-- Applied Python-based data analysis and machine learning techniques to engineering data.
-- Used Scikit-learn for model development and evaluation.
-- Developed a FastAPI interface for model serving.
-
-**Key Learning:** Applying machine learning concepts to practical engineering problems and exposing model functionality through APIs.
-
----
-
 ## Technical Skills
 
 ### Programming & Backend Engineering
